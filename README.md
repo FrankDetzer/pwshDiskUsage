@@ -59,14 +59,21 @@ Please visit [Microsofts Power Shell Documentation](https://docs.microsoft.com/e
 Get-PowerShellDiskUsage /
 ```
 
-This example returns a summary list of all the files and folders in the root folder of your computer using the alias.
+This example returns a summary list of all the files and folders in the root folder of the computer.
 
 ### Example 2
 ```powershell
-Get-PowerShellDiskUsage -SizeUnit MB
+Get-PowerShellDiskUsage -Unit MB
 ```
 
 This example returns a list of all the files and folders in the current folder and formats them to MB.
+
+### Example 3
+```powershell
+psdu ~/Downloads
+```
+
+This example returns a summary list of all the files and folders of the Download directory in your home folder using a alias.
 
 ---
 ## PARAMETERS
@@ -74,8 +81,8 @@ This example returns a list of all the files and folders in the current folder a
 ### -Path
 This parameter can be used to specify a path other than the current location of your shell.
 
-### -SizeUnit
-This parameter formats the output according to the input. 
+### -Unit
+This parameter formats the output according to the chosen unit. 
 
 You can specify: Bytes, KB, MB, GB, TB and PB.
 
