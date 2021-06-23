@@ -28,7 +28,7 @@ To use psdu please "dot source" (load) the Get-PowerShellDiskUsage.ps1 file. To 
 ### DOT SOURCE (LOADING) EXAMPLE
 ```
 cd ~/Downloads/Get-PowerShellDiskUsage/
-. Get-PowerShellDiskUsage.ps1
+. .\Get-PowerShellDiskUsage.ps1
 psdu 
 ```
 
